@@ -4,7 +4,8 @@ import random
 while True:
     try:
         n_elementos = int(input(
-    "Ingresa la cantidad positiva de elementos que desees: "))
+            "Ingresa la cantidad positiva de elementos que desees: ")
+                          )
         if n_elementos > 0:
             print("¡Número válido!")
             break
