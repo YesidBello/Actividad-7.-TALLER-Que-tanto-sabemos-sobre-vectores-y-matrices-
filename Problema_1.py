@@ -4,17 +4,16 @@ import random
 while True:
     try:
         n_elementos = int(input(
-            "Ingresa la cantidad positiva de elementos que desees: ")
+            "\nIngresa la cantidad positiva de elementos que desees: ")
                           )
         if n_elementos > 0:
-            print("¡Número válido!")
+            print("¡Número válido!\n")
             break
         else:
-            print("¡El número debe ser positivo!")
-            
+            print("¡El número debe ser positivo!\n")  
     except ValueError:
         print("¡Ese no es un número!")
-        print("Ingresa solamente números")              
+        print("Ingresa solamente números\n")              
                 
 lista_numeros = []
 
@@ -44,5 +43,4 @@ print("--------------------------------------------------------------------"
       "-------------------------------------------------------------------")
 
 print("Lista de números ordenados de mayor a menor: ", lista_numeros)
-\
-
+print("\n")
