@@ -35,4 +35,8 @@ def fill_matrix(numero):
             fila.append(numeros_aleatorios)
         matriz.append(fila)
     return matriz
-print(fill_matrix(numero))
+
+matriz_terminada = fill_matrix(numero)
+for fila in matriz_terminada:
+    print(fila)
+    
