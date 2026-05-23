@@ -1,6 +1,7 @@
 # Importamos el módulo que contiene el algoritmo matemático para generar
-# números aleatoriamente
+# números aleatoriamente y la libreria NumPy
 import random
+import Numpy as np   
        
 # Imprimimos un aviso de lo que el algoritmo hará
 print("\nHola! Calcularemos el determinante de una matríz NxN"
@@ -39,4 +40,9 @@ def fill_matrix(numero):
 matriz_terminada = fill_matrix(numero)
 for fila in matriz_terminada:
     print(fila)
+    
+matriz_numpy = np.array(matriz_terminada)
+
+determinante = np.linalg.det(matriz_numpy)
+print("\nEl determinante de la matriz es: ", round(determinante, 2)) 
     
