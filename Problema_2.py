@@ -40,9 +40,8 @@ def fill_matrix(numero):
 matriz_terminada = fill_matrix(numero)
 for fila in matriz_terminada:
     print(fila)
-    
+     
 matriz_numpy = np.array(matriz_terminada)
 
 determinante = np.linalg.det(matriz_numpy)
-print("\nEl determinante de la matriz es: \n", round(determinante, 2)) 
-    
+print("\nEl determinante de la matriz es: \n", round(determinante, 2))
