@@ -4,7 +4,7 @@ respuestas_correctas = [random.randint(1, 5) for _ in range(60)]
 respuestas_mate_correctas = respuestas_correctas[:30]
 respuestas_verbal_correctas = respuestas_correctas[30:]
 
-cantidad_estudiantes = int(input("Ingresa la cantidad de estudiantes: "))
+cantidad_estudiantes = int(input("\nIngresa la cantidad de estudiantes: "))
 
 estudiantes = []
 
@@ -44,10 +44,12 @@ promedio_mate = total_puntaje_mate / cantidad_estudiantes
 promedio_verbal = total_puntaje_verbal / cantidad_estudiantes
 promedio_total = total_puntaje_global / cantidad_estudiantes
 
+print(f"\n ------   Estudiantes por encima del promedio ({promedio_total})  ------")
+
 for estudiante in estudiantes:
     if estudiante["Puntaje_Total"] >= promedio_total:
         print(f"Credencial: {estudiante['Credencial']} | Puntaje Total: {estudiante['Puntaje_Total']}")
         
 estudiante_top = max(estudiantes, key=lambda x: x["Puntaje_Total"])
-print(f"\n🏆 El MAYOR puntaje fue de {estudiante_top['Puntaje_Total']}, obtenido por la Credencial {estudiante_top['Credencial']}")
- 
+print(f"\nEL MAYOR puntaje fue {estudiante_top['Puntaje_Total']}, obtenido por la Credencial {estudiante_top['Credencial']}")
+print() 
